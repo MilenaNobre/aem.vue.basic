@@ -2,11 +2,12 @@ import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
+import CustomHeader from './components/Header/CustomHeader'
 import Image from './components/Image/Image'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
-  MapTo
+  MapTo // biblioteca responsavel por integrar o component Vue com o AEM
 } from '@mavice/aem-vue-editable-components'
 
 MapTo('vue/components/page')(withComponentMappingContext(AppPage))
@@ -28,6 +29,9 @@ MapTo('vue/components/checkbox')(CheckBox, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
+
+// CustomHeader Component Mapping
+MapTo('vue/components/custom-header')(CustomHeader)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {

@@ -1,7 +1,7 @@
 # Trilha de Capacitação de Vue.js com AEM
 
 ### Proveitos da capacitação
-   <ul> 
+   <ul> <strong>Aula: Novo Componente Vue</strong>
         <li> Criar o componente Vue (normalmente) dentro da pasta /ui.frontend/src/components.</li>
         <li> Importar o componente no arquivo "/ui.frontend/src/map-components.js" e aplicar o "MapTo" nele.</li>
         <li> Criar o componente no "/ui.apps/.../components".</li>

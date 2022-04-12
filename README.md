@@ -7,4 +7,9 @@
         <li> Criar o componente no "/ui.apps/.../components".</li>
         <li> Executar "mvn clean install -PautoInstallSinglePackage" na pasta root do projeto - Esse comando irá executar o build dos arquivos pom.xml e vai passar para o AEM </li>
         <li> Editar o template da página para aparecer o componente.</li>  
-</ul>
+    </ul>
+    <ul> <strong>Aula: Novo Diálogo Vue</strong>
+        <li> Criar uma props e chamá-la no componente.</li>
+        <li> Criar a prop no módulo "/ui.apps/.../components/*/_cq_dialog/.content.xml" </li>
+        <li> Buildar novamente o projeto. </li>
+    </ul>

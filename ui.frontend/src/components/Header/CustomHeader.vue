@@ -2,6 +2,8 @@
   <header>
     <h1>ESTE É O HEADER</h1>
     <p>Treinando com um componente Vue em AEM</p>
+    <p> {{ text }} </p>
+    <p> {{ checkbox ? 'isChecked' : 'inNotChecked' }} </p>
   </header>
 </template>
 
@@ -9,7 +11,17 @@
 // Imports
 
 export default {
-  name: 'CustomHeader'
+  name: 'CustomHeader',
+  props: {
+    text: {
+      type: String,
+      default: 'Texto padrão'
+    },
+    checkbox: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 
